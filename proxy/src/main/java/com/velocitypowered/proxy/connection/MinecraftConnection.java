@@ -117,7 +117,7 @@ public class MinecraftConnection extends ChannelInboundHandlerAdapter {
     if (association != null && !knownDisconnect
         && !(sessionHandler instanceof StatusSessionHandler)
         && server.getConfiguration().isLogPlayerConnections()) {
-      logger.info("{} has disconnected", association);
+      //logger.info("{} has disconnected", association);
     }
   }
 

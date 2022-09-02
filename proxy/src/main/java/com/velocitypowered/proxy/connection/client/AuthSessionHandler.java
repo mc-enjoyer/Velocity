@@ -96,7 +96,7 @@ public class AuthSessionHandler implements MinecraftSessionHandler {
         return CompletableFuture.completedFuture(null);
       }
 
-      logger.info("{} has connected", player);
+      //logger.info("{} has connected", player);
 
       return server.getEventManager()
           .fire(new PermissionsSetupEvent(player, ConnectedPlayer.DEFAULT_PERMISSIONS))
